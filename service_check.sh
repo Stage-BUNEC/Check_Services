@@ -11,9 +11,12 @@ ACTIVE="active"
 #}
 #verifier $1 #appel de la fonction
 
-if [ `systemctl is-active $1` = "$ACTIVE" ]
-then
-	echo "c'est bon"
-else
-	echo "c'est pas bon"
-fi
+for service in `cat services.txt`
+do
+	if [ `systemctl is-active $service` = "$ACTIVE" ]
+	then
+		echo "service : $service -> c'est bon"
+	else
+		echo "service : $service -> c'est pas bon"
+	fi
+done
