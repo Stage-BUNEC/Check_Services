@@ -1,23 +1,16 @@
 ACTIVE="active"
 
-#verifier (){
-#	etat=`systemctl is-active $1`
-#	if [ "$etat" = "$ACTIVE" ]
-#	then
-#		echo "c'est bon"
-#	else
-#		echo "c'est pas bon"
-#	fi
-#}
-#verifier $1 #appel de la fonction
+printMessage ()
+{
+	echo "` date '+%A_%D %X'`,$1,$2"
+}
 
-
-for service in `cat services.txt`
+for service in `cat $1`
 do
 	etat=`systemctl is-active $service`
 	if [ "$etat" = "$ACTIVE" ]
 	then
-		echo "service : $service -> c'est bon"
+		printMessage $service $etat
 	else
 		compte=0
 		while [ "$compte" -lt 4 ] && [ "$etat" != "$ACTIVE" ]
@@ -29,9 +22,9 @@ do
 		done
 		if [ "$etat" = "$ACTIVE" ]
 		then
-			echo "Le service : $service a finalement demare"
+			printMessage $service $etat
 		else
-			echo "Le service : $service n'a pas demare au bout de $compte tentative"
+			printMessage $service $etat
 		fi
 	fi
 done
