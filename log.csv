@@ -1,1 +1,9 @@
 time,service_name,status
+mardi_03/29/22 06:39:59,mysql.service,active
+mardi_03/29/22 06:39:59,postgresql.service,active
+mardi_03/29/22 06:40:19,apache2.service,inactive
+mardi_03/29/22 06:40:19,bind9.service,inactive
+mardi_03/29/22 07:00:10,postgresql.service,active
+mardi_03/29/22 07:00:10,mysql.service,active
+mardi_03/29/22 07:00:31,apache2.service,inactive
+mardi_03/29/22 07:00:31,bind9.service,inactive
