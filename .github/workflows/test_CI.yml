@@ -27,7 +27,9 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: INSTALL SERVERS
-        run: sudo apt-get install mysql-common mysql-client-core-8.0 mysql-client-8.0 mysql-server-core-8.0 mysql-server-8.0 mysql-server-8.0
+        run: 
+            sudo systemctl status mysql.service
+            sudo apt-get install mysql-common mysql-client-core-8.0 mysql-client-8.0 mysql-server-core-8.0 mysql-server-8.0
 
       # Runs a set of commands using the runners shell
       - name: Run our script test
