@@ -1,2 +1,4 @@
 mysql.service
-psql
+postgresql.service
+bind9.service
+apache2.service

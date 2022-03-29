@@ -5,8 +5,7 @@ printMessage ()
 	echo "` date '+%A_%D %X'`,$1,$2"
 }
 
-for service in `cat $1`
-do
+check_services(){
 	etat=`systemctl is-active $service`
 	if [ "$etat" = "$ACTIVE" ]
 	then
@@ -27,5 +26,12 @@ do
 			printMessage $service $etat
 		fi
 	fi
+}
+
+for service in `cat $1`
+do
+	check_services &
 done
+
+wait #wait for child's job in background
 
