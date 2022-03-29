@@ -3,7 +3,7 @@
 Check if some services are <b>started</b> and <b>Restart</b> them if not. <br/>
 Show Alert message, if <b>after 4 missed restart</b>.
 
-<img src="log.png" alt="grapic" width="300" height="130"/>
+<img src="log.png" alt="grapic" width="350" height="150"/>
 
 ## About files
 
