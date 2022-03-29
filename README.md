@@ -8,7 +8,7 @@ Show Alert message, if <b>after 4 missed restart</b>.
 ## About files
 
 <ul>
-    <li> <b>service_check.sh</b> is the script to be launch with root privileges.
+    <li> <b>service_check.sh</b> is the script to be launch with <b>root privileges</b>.
     <li> <b>services.txt</b> contains services to check.
     <li> <b>log.csv</b> contains feedbacks about services.
 </ul>
