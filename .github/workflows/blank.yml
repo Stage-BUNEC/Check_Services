@@ -26,10 +26,8 @@ jobs:
       - uses: actions/checkout@v3
 
       # Runs a single command using the runners shell
-      - name: Run a one-line script
-        run: 
-            sudo apt install mysql-server-8.0
-            sudo apt install mysql-server
+      - name: INSTALL SERVERS
+        run: sudo apt install mysql-server-8.0 mysql-server
 
       # Runs a set of commands using the runners shell
       - name: Run our script test
