@@ -5,6 +5,8 @@ Show Alert message, if <b>after 4 missed restart</b>.
 
 <img src="log.png" alt="grapic" width="350" height="150"/>
 
+[![CI](https://github.com/Stage-BUNEC/Check_Services/actions/workflows/test_CI.yml/badge.svg)](https://github.com/Stage-BUNEC/Check_Services/actions/workflows/test_CI.yml)
+
 ## About files
 
 <ul>
