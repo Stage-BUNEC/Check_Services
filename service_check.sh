@@ -1,3 +1,7 @@
+# [ Date ]        : 29-03-2022
+# [ Description ] : Ce script sert vérifier l'état des services qu'utilise alfresco
+# [ Author(s) ]    : NANFACK STEVE / ERIC OKALA 
+
 ACTIVE="active"
 
 printMessage ()
